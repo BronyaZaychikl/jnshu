@@ -5,6 +5,7 @@ html{
 }
 body{
     margin: 0 auto;
+    color: white;
 }
 td{
     display: flex;
@@ -75,6 +76,7 @@ color: white;
 .photo3{
     width: 14px;
     height: 14px;
+    margin-left: 0.5rem;
 }
 .thead1{
     background-color: #68ccd5;
