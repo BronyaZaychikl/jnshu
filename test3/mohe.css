@@ -1,0 +1,37 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100rem;
+    background: #68cdd5;
+    
+}
+.first{
+    width: 0;
+    margin: 0.1rem;
+}
+.head{
+    margin: 2rem 5rem;
+}
+.body{
+   margin: auto;
+   margin: 8rem 4rem;
+}
+.photol{
+   float: left;
+   margin: 7rem 3rem 2rem;
+
+}
+.photor{
+    float: right;
+   margin: 7rem 3rem 2rem;
+}
+
+p{
+    font-size: 1.2rem;
+    color: white;
+}
+img{
+    display: block;
+    margin: auto;
+}

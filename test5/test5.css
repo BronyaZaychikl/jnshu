@@ -1,0 +1,118 @@
+html{
+    max-width: 768px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+body{
+    margin: 0;
+}
+td{
+    display: flex;
+    align-items: center;
+border-bottom: 1px solid #e1e5e7;
+padding: 0.5rem 0;
+}
+span{
+   margin: 0.5rem 0.5rem;
+}
+table{
+    width: 100%;
+    font-size: 0.8rem;
+    color: #333333;
+}
+p{
+margin: 0.5rem;
+}
+.top1{
+    position: fixed;
+    top: 0;
+    width: 100rem;
+    height: 2.75rem;
+    background: #68ccd5;
+}
+.top2{
+    width: 11px;
+    height: 18.5px;
+  margin: 12px;
+}
+.top3{
+   position: fixed;
+   left: 50%;
+   top: 0;
+   margin-top: 12px;
+   margin-left: -32px;
+   color: white;
+}
+.head2{
+margin-left: 1rem;
+color: white;
+}
+.head1{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-size: 100% 100%;
+    height: 150px;
+    margin-top: 44px;
+    background-repeat: no-repeat;
+    background-image: url(/img/beijing.png);
+}
+.head3{
+    font-size: 0.8rem;
+}
+.photo1{
+    padding: 0.5rem;
+    width: 85px;
+    height: 85px;
+}
+.photo2{
+    margin-left: 0.5rem;
+    width: 10px;
+    height: 14px;
+}
+.photo3{
+    width: 14px;
+    height: 14px;
+}
+.thead1{
+    background-color: #68ccd5;
+    padding: 0.5rem 2px;
+   margin: 0 0 0 0.5rem;
+}
+.tbody1{
+   padding-left: 0.5rem;
+    padding-bottom: 5rem;
+}
+.color1{
+    color: red;
+}
+.color2{
+    color: #999999;
+}
+.no{
+    white-space: nowrap;
+}
+.foot1{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    background: white;
+}
+.foot2{
+    flex: auto;
+    margin: 0.2rem;
+    background: white;
+    border:2px solid #68ccd5;
+    color: #68ccd5;
+    border-radius: 10px;
+}
+.foot3{
+    flex: auto;
+    margin: 0.2rem;
+    background: #68ccd5;
+    border: 1px solid #68ccd5;
+    color: white;
+    border-radius: 10px;
+}
