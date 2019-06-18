@@ -1,10 +1,10 @@
 html{
-    max-width: 768px;
-    min-width: 320px;
+    max-width:768px;
+    min-width: 320px; 
     margin: 0 auto;
 }
 body{
-    margin: 0;
+    margin: 0 auto;
 }
 td{
     display: flex;
@@ -27,6 +27,7 @@ margin: 0.5rem;
     position: fixed;
     top: 0;
     width: 100rem;
+    max-width: 768px;
     height: 2.75rem;
     background: #68ccd5;
 }
@@ -51,12 +52,13 @@ color: white;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     height: 150px;
     margin-top: 44px;
     background-repeat: no-repeat;
     background-image: url(img/bg.png);
 }
+
 .head3{
     font-size: 0.8rem;
 }
@@ -96,6 +98,7 @@ color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-width: 768px;
     height: 3rem;
     display: flex;
     background: white;
