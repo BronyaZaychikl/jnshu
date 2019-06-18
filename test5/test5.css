@@ -55,7 +55,7 @@ color: white;
     height: 150px;
     margin-top: 44px;
     background-repeat: no-repeat;
-    background-image: url(/img/beijing.png);
+    background-image: url(img/beijing.png);
 }
 .head3{
     font-size: 0.8rem;
