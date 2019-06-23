@@ -92,6 +92,7 @@ select {
 .lie4 {
     width: 100%;
     outline: none;
+    text-align-last: center;
 }
 .lie5 {
     border: none;
