@@ -1,0 +1,112 @@
+html {
+   max-width: 768px;
+    font-size: 62.5%;
+    min-width: 375px;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    margin-top: 6.4rem;
+
+}
+p {
+    font-size: 1.6rem;
+    color: #787878;
+}
+button {
+    border: none;
+    outline: none;
+}
+.bg {
+background: url('css-top.png');
+background-size: 6.8rem 3.3rem;
+}
+.bg-lie {
+    width: 1.7rem; height: 1.7rem;
+    background-position: -2.3rem -0.2rem;
+}
+.bg-back {
+    width: 1.2rem; 
+    height: 2rem;
+    background-position: -5.2rem -0.2rem;
+position: absolute;
+top: 2rem;
+right: 2rem;
+}
+.bg-san {
+    width: 1.4rem;
+    height: 2.8rem;
+    background-position: -0.4rem -0.5rem;
+    position: absolute;
+    top: 22rem;
+    right: 2rem;
+}
+.head1 {
+position: fixed;
+max-width: 768px;
+top: 0;
+width: 100%;
+height: 1.7rem;
+background-color: #29bde0;
+padding: 1.35rem;
+}
+.head2 {
+    position: relative;
+   margin: 3.5rem;
+   margin-bottom: 1.5rem;
+   background-color: #ffffff;
+   border: 1px solid #c9c9c9;
+}
+.head3 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #9a9a9a;
+}
+.word1 {
+    color: #fbb435;
+}
+.word2 {
+    color: #fff;
+}
+.box1{
+position: relative;
+    background-color: #ffffff;
+    border: 1px solid #c9c9c9;
+    margin: 3.5rem;
+    margin-top: 1.5rem;
+}
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbb435;
+    height: 5.5rem;
+    width: 100%;
+    border-bottom: 1px solid #fbb435;
+    margin-bottom: 1.5rem;
+}
+.box3 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 80%;
+    background-color: #69d1e9;
+
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #c9c9c9;
+}
+.circle:focus {
+    background-color: #69d1e9;
+}
