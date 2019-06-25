@@ -14,6 +14,12 @@ p {
     font-size: 1.6rem;
     color: #787878;
 }
+a {
+    text-decoration: none;
+ }
+ a:focus {
+    background-color: transparent;
+}
 button {
     border: none;
     outline: none;
@@ -27,20 +33,21 @@ background-size: 6.8rem 3.3rem;
     background-position: -2.3rem -0.2rem;
 }
 .bg-back {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     width: 1.2rem; 
     height: 2rem;
     background-position: -5.2rem -0.2rem;
-position: absolute;
-top: 2rem;
-right: 2rem;
+
 }
 .bg-san {
+    position: absolute;
+    top: 48%;
+    right: 3%;
     width: 1.4rem;
     height: 2.8rem;
     background-position: -0.4rem -0.5rem;
-    position: absolute;
-    top: 22rem;
-    right: 2rem;
 }
 .head1 {
 position: fixed;
