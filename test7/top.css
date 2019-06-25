@@ -1,11 +1,8 @@
 html {
-   max-width: 768px;
     font-size: 62.5%;
-    min-width: 375px;
-    margin: 0 auto;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: #f0f0f0;
     margin-top: 6.4rem;
 
@@ -28,8 +25,9 @@ button {
 background: url('css-top.png');
 background-size: 6.8rem 3.3rem;
 }
-.bg-lie {
-    width: 1.7rem; height: 1.7rem;
+.bg-list {
+    width: 1.7rem; 
+    height: 1.7rem;
     background-position: -2.3rem -0.2rem;
 }
 .bg-back {
@@ -51,16 +49,14 @@ background-size: 6.8rem 3.3rem;
 }
 .head1 {
 position: fixed;
-max-width: 768px;
 top: 0;
 width: 100%;
-height: 1.7rem;
 background-color: #29bde0;
 padding: 1.35rem;
 }
 .head2 {
     position: relative;
-   margin: 3.5rem;
+   margin: 1rem;
    margin-bottom: 1.5rem;
    background-color: #ffffff;
    border: 1px solid #c9c9c9;
@@ -68,10 +64,13 @@ padding: 1.35rem;
 .head3 {
     text-align: center;
     margin: 2rem 0;
+    font-size: 1.7rem;
     color: #9a9a9a;
+
 }
 .word1 {
     color: #fbb435;
+    font-size: 2rem;
 }
 .word2 {
     color: #fff;
@@ -80,7 +79,7 @@ padding: 1.35rem;
 position: relative;
     background-color: #ffffff;
     border: 1px solid #c9c9c9;
-    margin: 3.5rem;
+    margin: 1rem;
     margin-top: 1.5rem;
 }
 .box2 {
