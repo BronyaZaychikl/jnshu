@@ -28,24 +28,26 @@ background-size: 8.84rem 4.29rem;
 .bg-list {
     width: 2.21rem; 
     height: 2.21rem;
-    background-position: -2.99rem -0.26rem;
+    background-position: -3.39rem -0.4rem;
 }
 .bg-back {
     position: absolute;
-    top: 2rem;
+    top:50%;
     right: 2rem;
     width: 1.56rem; 
     height: 2.6rem;
-    background-position: -6.76rem -0.26rem;
+    margin-top: -13px;
+    background-position: -6.7rem -0.4rem;
 
 }
 .bg-san {
     position: absolute;
     top: 48%;
     right: 3%;
-    width: 1.82rem;
-    height: 3.64rem;
-    background-position: -0.52rem -0.65rem;
+    width: 2rem;
+    height: 3.2rem;
+    padding: 0;
+    background-position: -0.5rem -0.65rem;
 }
 .head1 {
 position: fixed;
