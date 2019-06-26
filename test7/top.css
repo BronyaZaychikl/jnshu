@@ -4,11 +4,11 @@ html {
 body {
     margin: 0 auto;
     background-color: #f0f0f0;
-    margin-top: 6.4rem;
+    margin-top: 64px;
 
 }
 p {
-    font-size: 1.6rem;
+    font-size: 16px;
     color: #787878;
 }
 a {
@@ -54,25 +54,25 @@ position: fixed;
 top: 0;
 width: 100%;
 background-color: #29bde0;
-padding: 1.35rem;
+padding: 13.5px;
 z-index: 1;
 }
 .head2 {
     position: relative;
-   margin: 1rem;
-   margin-bottom: 1.5rem;
+   margin: 10px;
+   margin-bottom: 15px;
    background-color: #ffffff;
    border: 1px solid #c9c9c9;
 }
 .head3 {
     text-align: center;
-    margin: 2rem 0;
-    font-size: 1.7rem;
+    margin: 20px 0;
+    font-size: 17px;
     color: #9a9a9a;
 }
 .word1 {
     color: #fbb435;
-    font-size: 2rem;
+    font-size: 20px;
 }
 .word2 {
     color: #fff;
@@ -82,18 +82,18 @@ z-index: 1;
 position: relative;
     background-color: #ffffff;
     border: 1px solid #c9c9c9;
-    margin: 1rem;
-    margin-top: 1.5rem;
+    margin: 10px;
+    margin-top: 15px;
 }
 .box2 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fbb435;
-    height: 5.5rem;
+    height: 55px;
     width: 100%;
     border-bottom: 1px solid #fbb435;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 .box3 {
     display: flex;
@@ -104,7 +104,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7rem;
+    height: 70px;
     width: 80%;
     background-color: #69d1e9;
 }

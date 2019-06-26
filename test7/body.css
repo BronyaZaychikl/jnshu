@@ -1,12 +1,10 @@
-html {
-    font-size: 62.5%;
-}
+
 body {
-    margin: 13rem 0 10rem ;
+    margin: 130px 0 100px ;
     background-color: #29bde0;
 }
 p {
-    font-size: 1.5rem;
+    font-size: 15px;
     margin: 0;
 }
 a {
@@ -30,25 +28,25 @@ button {
     justify-content: space-between;
 }
 .word4 {
-    font-size: 2rem;
+    font-size: 20px;
     color: #ffffff;
-    margin:0.7rem;
+    margin:7px;
 }
 .start1 {
     position: relative;
     width: 100%;
-    height: 4.1rem;
+    height: 41px;
     background-color: #b9e9f5;
 }
 .start2 {
     float: left;
-    margin: 1rem;
+    margin: 10px;
 }
 .play {
     float: right;
-    width: 2.8rem;
-    height: 2.8rem;
-    margin: 1rem;
+    width: 28px;
+    height: 28px;
+    margin: 10px;
     background-image: url('play.png');
     background-repeat: no-repeat;
 }
@@ -56,14 +54,14 @@ button {
     position: absolute;
     top: 0;
     right: 0;
-    width: 20rem;
+    width: 200px;
     transform: rotate(180deg);
     opacity: 0;
 }
 .triangle {
     width: 0;
     height: 0;
-    margin-left: 3rem;
+    margin-left: 30px;
     border: 7px solid black;
     border-top-color: #b9e9f5;
     border-bottom: none;
@@ -71,14 +69,13 @@ button {
     border-right-color: transparent;
 }
 .word3 {
-    margin-left: 3rem;
+    margin-left: 30px;
     color: #ffffff;
 }
 .body1 {
     display: flex;
     justify-content: space-around;
 }
-
 .body2 {
     display: flex;
     flex-flow: column nowrap;
@@ -92,11 +89,10 @@ button {
     height: 20vw;
     border: 0.6vw solid #ffffff;
     background-color: #f5c97b;
-  
 }
 .body4{
     width: 21vw;
-    padding: 1.5rem 0;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     visibility: hidden;
@@ -117,15 +113,11 @@ button {
     text-align: center;
     color: #ffffff;
 }
-
-
-
-
 .foot1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 10rem;
+    height: 100px;
     background-color: #29bde0;
 }
 .foot2 {
@@ -133,29 +125,29 @@ button {
     justify-content: center;
     width: 80%;
     background-color: #fbb435;
-    margin: 2rem auto;
+    margin: 20px auto;
 }
 .foot3 {
-    margin: 1rem 0;
+    margin: 10px 0;
     color: #ffffff;
-    font-size: 2.5rem;
+    font-size: 25px;
 }
 .foot4 {
     width: 100%;
     text-align: center;
 }
 .list {
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
     border: none;
     background-image: url('list.png');
     background-color: #29bde9;
     background-repeat: no-repeat;
 }
-.close {    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
+.close {    width: 20px;
+    height: 20px;
+    margin: 10px;
     border: none;
     background-image: url('close.png');
     background-color: #29bde9;
