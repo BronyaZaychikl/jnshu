@@ -122,23 +122,23 @@ margin: 0.25rem 1rem 0.25rem 0;
 }
 .foot2 {
     display: flex;
-    justify-content: space-between;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
-.p1 {
+.end1 {
     width: 13rem;
     height: 3rem;
     background-color: #f66f6f;
     text-align: center;
     border-radius: 3px;
     font-size: 2rem;
-    margin: 1.5rem;
 }
-.p2 {
+.end2 {
     width: 13rem;
     height: 3rem;
     background-color: #fbb435;
     text-align: center;
     border-radius: 3px;
     font-size: 2rem;
-    margin: 1.5rem;
 }

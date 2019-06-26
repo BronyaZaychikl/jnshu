@@ -23,29 +23,29 @@ button {
 }
 .bg {
 background: url('css-top.png');
-background-size: 6.8rem 3.3rem;
+background-size: 8.84rem 4.29rem;
 }
 .bg-list {
-    width: 1.7rem; 
-    height: 1.7rem;
-    background-position: -2.3rem -0.2rem;
+    width: 2.21rem; 
+    height: 2.21rem;
+    background-position: -2.99rem -0.26rem;
 }
 .bg-back {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    width: 1.2rem; 
-    height: 2rem;
-    background-position: -5.2rem -0.2rem;
+    width: 1.56rem; 
+    height: 2.6rem;
+    background-position: -6.76rem -0.26rem;
 
 }
 .bg-san {
     position: absolute;
     top: 48%;
     right: 3%;
-    width: 1.4rem;
-    height: 2.8rem;
-    background-position: -0.4rem -0.5rem;
+    width: 1.82rem;
+    height: 3.64rem;
+    background-position: -0.52rem -0.65rem;
 }
 .head1 {
 position: fixed;
@@ -53,6 +53,7 @@ top: 0;
 width: 100%;
 background-color: #29bde0;
 padding: 1.35rem;
+z-index: 1;
 }
 .head2 {
     position: relative;
@@ -66,7 +67,6 @@ padding: 1.35rem;
     margin: 2rem 0;
     font-size: 1.7rem;
     color: #9a9a9a;
-
 }
 .word1 {
     color: #fbb435;
@@ -74,6 +74,7 @@ padding: 1.35rem;
 }
 .word2 {
     color: #fff;
+
 }
 .box1{
 position: relative;
@@ -104,7 +105,13 @@ position: relative;
     height: 7rem;
     width: 80%;
     background-color: #69d1e9;
-
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 .circle {
     width: 10px;
@@ -112,7 +119,8 @@ position: relative;
     padding: 0;
     border-radius: 50%;
     background-color: #c9c9c9;
+    
 }
-.circle:focus {
+.circle:hover {
     background-color: #69d1e9;
 }
