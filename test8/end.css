@@ -1,0 +1,324 @@
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+p {
+    color: #fff;
+}
+strong {
+    font-size: 16px;
+
+}
+span {
+    color: #ff0000;
+}
+li {
+    padding: 15px;
+    color: #29b078;
+    list-style: circle;
+}
+/*通用*/
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.head1 {
+    display: flex;
+}
+.number {
+    font-size: 12px;
+    color: #29b078;
+}
+/*顶部*/
+.bg-jnshu {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 130px;
+    height: 25px;
+    background: url(jnshu.png) no-repeat;
+    background-size: 130px 25px;
+    margin-top: 12.5px;
+    z-index: 1;
+}
+.navbar-collapse,
+.navbar {
+    justify-content: flex-end;
+
+}
+.navbar-nav {
+    align-items: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.nav-bg {
+    background-color: #29b078;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+
+/*导航栏*/
+main {
+    overflow: hidden;
+   width: 90vw;
+   margin: 0 auto;
+   padding-bottom: 100px;
+}
+
+.first {
+    display: flex;
+    padding: 10px 0;
+}
+.second {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+table {
+    table-layout: fixed;
+
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 1px 1px 1px #d0d6d9;
+    font-size: 12px;
+}
+td {
+    padding-left: 10px;
+    border: 1px solid #edf1f2;
+}
+.portrait {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background: url(portrait.png) no-repeat;
+}
+.block {
+    overflow: hidden;
+}
+.salary {
+    text-align: center;
+}
+.right {
+    float: right;
+    padding-right: 5px;
+    color: #333;
+}
+.color {
+    color: #333;
+}
+.word1 {
+    font-size: 14px;
+    color: #333;
+}
+.layer {
+    position: relative;
+    float: left;
+    width: 412px;
+    height: 484px;
+    padding: 25px 25px 25px 0px;
+    overflow: hidden;
+}
+.back {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(61, 61, 61, 0.9);
+    color: #fff;
+    transition: all 2s;
+}
+
+.line {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #d0d6d9;
+}
+.word2 {
+    color: #29b078;
+}
+.word3 {
+    color: #999;
+}
+.word4 {
+    padding-top: 50px;
+}
+.word5 {
+    text-align: left;
+    padding: 10px 45px;
+    text-align-last: left;
+}
+.word6 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+.word7 {
+    color: #333;
+}
+/*主体*/
+footer {
+    background-color: #26a26f;
+    min-width: 320px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.foot2 {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+.end1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.end2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.end3 {
+    display: flex;
+   
+}
+.word8 {
+    padding-right: 20px;
+}
+
+.foot3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+@media screen and (min-width:512px) and (max-width:1060px) {
+    .foot2 {
+        width: 512px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:512px) {
+    .foot2 {
+        width: 270px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .foot2 {
+        width: 1024px;
+        justify-content: space-between;
+    }
+}
+/*底部*/
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 1.5rem;
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 0 1rem;
+        padding-right: 10vw;
+    }
+    .bg-jnshu {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        width: 285px;
+        height: 50px;
+        background: url(jnshu.png) no-repeat;
+        background-size: 285px 50px;
+        margin-top: -25px;
+        z-index: 1;
+    }
+    .second {
+        width: 520px;
+    }
+    .nav-link:hover {
+        border-bottom: 3px solid #fff;
+    
+    }
+}
+@media (max-width: 768px) {
+    .second {
+        width: 250px;
+    }
+    .nav-link {
+        text-align: center;
+        width: 100%;
+    }
+    .nav-link:hover {
+       background: rgba(2501, 250, 250, 0.5)
+    
+    }
+}
+@media (min-width: 450px) {
+    table,
+    .back {
+        width: 382px;
+        height: 444px;
+    }
+    .back {
+        left: -382px;
+    }
+    .layer:hover .back {  
+        transform: translateX(382px);
+    
+    }
+}
+@media (max-width: 450px) {
+    table,
+    .back {
+        width: 85vw;
+        height: 100vw;
+    }
+    .back {
+        left: -85vw;
+    }
+    .layer:hover .back {  
+        transform: translate(85vw);
+    }
+    .word5 {
+        font-size: 12px;
+    }
+}
+.bg-top {
+    background: url(top.png);
+    background-size: 83px 28px;
+}
+.bg-tencent {
+    width: 27px;
+    height: 27px;
+    background-position: -27px -0;
+}
+.bg-qq {
+    width: 29px;
+    height: 26px;
+    background-position: -54px -0;
+}
+.bg-blog {
+    width: 27px;
+    height: 28px;
+    background-position: -0 -0;
+}
+.bg-recommend {
+    overflow: hidden;
+    height: 100%;
+    background: url(recommend.png) no-repeat center top;
+    background-size: 100% 100%
+}
+.bg-qrcode {
+    width: 92px;
+    height: 92px;
+    background: url(qrcode.png);
+    background-size: 92px 92px;
+}

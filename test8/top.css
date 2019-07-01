@@ -1,0 +1,541 @@
+body {
+    width: 100%;
+    background-color: #fafafa;
+}
+p {
+    margin: 0;
+    color: #fff;
+}
+strong {
+    padding: 20px 0 10px;
+}
+/*通用*/
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.head1 {
+    display: flex;
+}
+.number2 {
+    font-size: 12px;
+    color: #29b078;
+}
+/*顶部*/
+.navbar-collapse,
+.navbar {
+    justify-content: flex-end;
+}
+.navbar-nav {
+    align-items: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.nav-bg {
+    background-color: #29b078;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+/*导航条*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators li {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #fff;
+}
+.carousel-control-next-icon {
+    width: 2.7vw;
+    height: 4.7vw;
+    background: url(right.png);
+    background-size: 2.7vw 4.7vw;
+}
+.carousel-control-prev-icon {
+    width: 2.7vw;
+    height: 4.6vw;
+    background: url(left.png);
+    background-size: 2.7vw 4.6vw;
+}
+/*轮播图,改了一下左右按钮和底部指示符,框架自适应*/
+main,
+.main1,
+.main2,
+.main3,
+.main4,
+.main5 {
+    margin: 0 auto;
+}
+main {
+    padding-top: 100px;
+}
+.main2,
+.main3,
+.main4,
+.top1,
+.wall {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.title2 {
+    padding: 50px 0 50px;
+}
+/*主体相同的属性写在一起了*/
+.top1 {
+    justify-content: flex-start;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+}
+.top2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+}
+.top4 {
+    display: flex;
+    align-items: baseline;
+}
+.main1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.word4 {
+    width: 210px;
+    padding: 10px 0 20px;
+    color: #999;
+}
+.number1 {
+    color: #29b078;
+}
+/*主体第一部分，top3在媒体查询里*/
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.word5 {
+    width: 120px;
+    padding: 20px 0 20px 10px;
+    color: #999;
+}
+.word6 {
+    width: 180px;
+    padding: 10px;
+    color: #999;
+}
+/*主体如何学习部分*/
+.flip {
+    display: flex;
+}
+.circle2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 10px 3px;
+}
+.leg {
+    display: flex;
+    flex-flow: row wrap;
+    width: 500%;
+    animation: photo 10s ease-out infinite;
+}
+.wall {
+    width: 222px;
+    height: 350px;
+    padding-top: 10px;
+    margin: 5px 18px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+.wall:hover {
+    box-shadow: 5px 5px 5px #e2e2e2;
+    z-index: 1;
+}
+/*主体优秀学员部分*/
+.interest {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 204.8px;
+    height: 170px;
+    background-color: #fff;
+}
+.example:hover {
+    box-shadow: 10px 10px 10px #e2e2e2;
+    z-index: 1;
+}
+/*主体合作企业部分*/
+.main5 {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+}
+.word7 {
+    text-align: center;
+}
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-left: 50px;
+   margin: 0 auto;
+}
+li {
+    margin: 10px 20px;
+    color: #999;
+ }
+/*友情链接部分*/
+footer {
+    background-color: #26a26f;
+    min-width: 320px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.foot2 {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+.end1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.end2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.end3 {
+    display: flex;
+   
+}
+.word8 {
+    padding-right: 20px;
+}
+
+.foot3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+/*底部*/
+@media (max-width: 768px) {
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
+    }
+    .nav-link:hover {
+       background: rgba(2501, 250, 250, 0.5)
+    }
+}
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 1.5rem;
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 0 1rem;
+        padding-right: 10vw;
+    }
+    .nav-link:hover {
+        border-bottom: 3px solid #fff;
+    
+    }
+}
+@media screen and (min-width:512px) and (max-width:1060px) {
+    .foot2 {
+        width: 512px;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .main2 {
+        width: 450px;
+    }
+    .center {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .arrow {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main1,
+    .main2,
+    .main3,
+    .main4,
+    .interest {
+        width: 1024px;
+    }
+    .center {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .map {
+        overflow: hidden;
+        width: 1024px;
+        height: 365px;
+    }
+    @keyframes photo {
+        0%, 25% {
+            margin-left: 0;
+        }
+        25%, 50% {
+            margin-left: -1024px;
+        }
+        50%, 75% {
+            margin-left: -2048px;
+        }
+        75%, 100% {
+            margin-left: -3072px;
+        }
+    }
+}
+@media screen and (min-width:512px) and (max-width:1024px) {
+    .main1,
+    .main3,
+    .main4,
+    .interest {
+        width: 512px;
+    }
+    .map {
+        overflow: hidden;
+        width: 512px;
+        height: 365px;
+    }
+    @keyframes photo {
+        0%, 25% {
+            margin-left: 0;
+        }
+        25%, 50% {
+            margin-left: -512px;
+        }
+        50%, 75% {
+            margin-left: -1024px;
+        }
+        75%, 100% {
+            margin-left: -1536px;
+        }
+    }
+}
+@media screen and (max-width:512px) {
+    .main1,
+    .main4,
+    .interest {
+        width: 210px;
+    }
+    .main3 {
+        width: 256px;
+    }
+    .top3 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align-last: center;
+    }
+    .map {
+        overflow: hidden;
+        width: 256px;
+        height: 365px;
+    }
+    @keyframes photo {
+        0%, 25% {
+            margin-left: 0;
+        }
+        25%, 50% {
+            margin-left: -256px;
+        }
+        50%, 75% {
+            margin-left: -512px;
+        }
+        75%, 100% {
+            margin-left: -768px;
+        }
+    }
+    .foot2 {
+        width: 270px;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1060px) {
+    .main5 {
+        width: 1060px;
+    }
+    .foot2 {
+        width: 1024px;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1060px) {
+    .main5 {
+        width: 600px;
+    }
+}
+@media screen and (max-width:600px) {
+    .main5 {
+        width: 210px;
+    }
+    .main2 {
+        width: 200px;
+    }
+    .center {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .bg-direction {
+        display: none;
+    }
+}
+/*媒体查询*/
+.bg-top {
+    background: url(top.png);
+    background-size: 83px 28px;
+}
+.bg-tencent {
+    width: 27px;
+    height: 27px;
+    background-position: -27px -0;
+}
+.bg-qq {
+    width: 29px;
+    height: 26px;
+    background-position: -54px -0;
+}
+.bg-blog {
+    width: 27px;
+    height: 28px;
+    background-position: -0 -0;
+}
+/*顶部小图标*/
+.bg-way {
+    background: url(way.png);
+    background-size: 155px 62px;
+}
+.bg-rocket {
+    width: 43px;
+    height: 62px;
+    background-position: -0 -0;
+}
+.bg-book {
+    width: 60px;
+    height: 62px;
+    background-position: -95px -0;
+}
+.bg-connections {
+    width: 52px;
+    height:62px;
+    background-position: -43px -0;
+}
+.bg-head {
+    width: 13px;
+    height: 13px;
+    background: url(head.png);
+    margin-right: 10px;
+}
+/*主体第一部分*/
+.bg-direction {
+    width: 28px;
+    height: 26px;
+    margin: 0 20px;
+    background: url(direction.png);
+}
+/*主体如何学习部分*/
+.bg-people {
+    background: url(people.png);
+    background-size: 432px 108px;
+}
+.bg-one {
+    width: 108px;
+    height: 108px;
+    background-position: -0 -0;
+}
+.bg-two {
+    width: 108px;
+    height: 108px;
+    background-position: -108px -0;
+}
+.bg-three {
+    width: 108px;
+    height: 108px;
+    background-position: -216px -0;
+}
+.bg-four {
+    width: 108px;
+    height: 108px;
+    background-position: -324px -0;
+}
+/*主体优秀学员部分*/
+.bg-partner {
+    background: url(partner.png);
+    background-size: 850px 60px;
+}
+.bg-ali {
+    width: 170px;
+    height: 60px;
+    background-position: -0 -0;
+}
+.bg-ksyun {
+    width: 170px;
+    height: 60px;
+    background-position: -170px -0;
+}
+.bg-console {
+    width: 170px;
+    height: 60px;
+    background-position: -340px -0;
+}
+.bg-rlyun {
+    width: 170px;
+    height: 60px;
+    background-position: -510px -0;
+}
+.bg-qiniu {
+    width: 170px;
+    height: 60px;
+    background-position: -680px -0;
+}
+/*主体合作企业部分*/
+.bg-qrcode {
+    width: 92px;
+    height: 92px;
+    background: url(qrcode.png);
+    background-size: 92px 92px;
+}
+/*底部二维码*/
