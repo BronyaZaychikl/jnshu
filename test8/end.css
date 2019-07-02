@@ -5,6 +5,7 @@ body {
     background-color: #fafafa;
 }
 p {
+    margin: 0;
     color: #fff;
 }
 strong {
@@ -19,10 +20,14 @@ li {
     color: #29b078;
     list-style: circle;
 }
+a:link {
+    text-decoration: none;
+}
 /*通用*/
 header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
 }
 .head1 {
@@ -66,9 +71,7 @@ header {
 
 /*导航栏*/
 main {
-    overflow: hidden;
-   width: 90vw;
-   margin: 0 auto;
+    overflow: hidden;;
    padding-bottom: 100px;
 }
 
@@ -102,6 +105,7 @@ td {
 }
 .block {
     overflow: hidden;
+    margin: 0 auto;
 }
 .salary {
     text-align: center;
@@ -135,6 +139,7 @@ td {
 }
 
 .line {
+    display: block;
     padding-bottom: 20px;
     font-weight: bold;
     color: #333;
@@ -164,6 +169,7 @@ td {
 }
 /*主体*/
 footer {
+    width: 100%;
     background-color: #26a26f;
     min-width: 320px;
     padding-top: 20px;
@@ -191,15 +197,48 @@ footer {
    
 }
 .word8 {
-    padding-right: 20px;
+    margin-right: 20px;
 }
-
+.borderbottom {
+    border-bottom: 1.5px solid #26a26f;
+    color: #fff;
+}
+.borderbottom:hover {
+    border-bottom: 1.5px solid #fff;
+}
 .foot3 {
     text-align: center;
     padding-top: 20px;
     font-size: 12px;
 }
-
+/*底部*/
+@media screen and (min-width:1300px) {
+    main {
+        width: 1236px;
+        margin: 0 auto
+    }
+    .second {
+        width: 520px;
+    }
+}
+@media screen and (min-width:824px) and (max-width:1299.98px) {
+    main {
+        width: 824px;
+        margin: 0 auto
+    }
+    .second {
+        width: 520px;
+    }
+}
+@media screen and (max-width:823.98px) {
+    main {
+        width: 412px;
+        margin: 0 auto
+    }
+    .second {
+        width: 300px;
+    }
+}
 @media screen and (min-width:512px) and (max-width:1060px) {
     .foot2 {
         width: 512px;
@@ -240,8 +279,9 @@ footer {
         margin-top: -25px;
         z-index: 1;
     }
-    .second {
-        width: 520px;
+    .nav-link {
+        border-top: 3px solid #29b078;
+        border-bottom: 3px solid #29b078;
     }
     .nav-link:hover {
         border-bottom: 3px solid #fff;
@@ -249,9 +289,7 @@ footer {
     }
 }
 @media (max-width: 768px) {
-    .second {
-        width: 250px;
-    }
+
     .nav-link {
         text-align: center;
         width: 100%;
@@ -271,7 +309,7 @@ footer {
         left: -382px;
     }
     .layer:hover .back {  
-        transform: translateX(382px);
+        transform: translateX(100%);
     
     }
 }
