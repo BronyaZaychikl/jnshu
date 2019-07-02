@@ -13,12 +13,15 @@ strong {
 /*通用*/
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 0 10vw;
+    height: 40px;
+    margin: 0 auto;
 }
 .head1 {
     display: flex;
+    padding-right: 1.5rem;
 }
 
 .number2 {
@@ -96,15 +99,16 @@ main {
     justify-content: flex-start;
     width: 240px;
     height: 240px;
-    padding: 10px;
+
 }
 .top2 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
+    border-left: 1px dashed #dedede;
     width: 240px;
     height: 240px;
-    padding: 10px;
+    padding: 0 0 40px 50px;
 }
 .top4 {
     display: flex;
@@ -113,7 +117,6 @@ main {
 .main1 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
 }
 .word4 {
     width: 210px;
@@ -138,7 +141,6 @@ main {
     box-shadow: 2px 2px 2px 3px #999;
 }
 .word5 {
-    width: 120px;
     padding: 20px 0 20px 10px;
     color: #999;
 }
@@ -168,7 +170,6 @@ main {
     width: 500%;
     animation: photo 20s ease-out infinite;
 }
-
 .wall {
     width: 220px;
     height: 350px;
@@ -191,8 +192,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 204.8px;
-    height: 170px;
     background-color: #fff;
 }
 .example:hover {
@@ -211,9 +210,9 @@ main {
 ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     list-style: none;
-    padding-left: 50px;
+    padding-left: 0;
     margin: 0 auto;
 }
 li {
@@ -304,26 +303,38 @@ footer {
 }
 @media screen and (min-width:600px) and (max-width:1024px) {
     .main2 {
-        width: 450px;
+      width: 600px;
+    }
+    .word5 {
+        width: 190px;
     }
     .center {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+    }
+    .center1 {
+        display: flex;
+        align-items: center;
     }
     .arrow {
         display: none;
     }
 }
 @media screen and (min-width: 1024px) {
-    .main1,
+    .main1 {
+        justify-content: space-between;
+        max-width: 1024px;
+    }
     .main2,
     .main3,
     .main4,
     .interest {
         width: 1024px;
+    }
+    .word5 {
+        width: 140px;
     }
     .center {
         display: flex;
@@ -333,11 +344,20 @@ footer {
         width: 100%;
         padding: 20px 0;
     }
+    .center1 {
+        display: flex;
+        align-items: center;
+    }
+    .example {
+        width: 204.8px;
+        height: 170px;
+    }
     .map {
         overflow: hidden;
         width: 1024px;
         height: 365px;
     }
+
     @keyframes photo {
         0%, 20% {
             margin-left: 0;
@@ -354,10 +374,12 @@ footer {
     }
 }
 @media screen and (min-width:512px) and (max-width:1024px) {
-    .main1,
-    .main3,
-    .main4,
-    .interest {
+    .main1 {
+    width: 70%;
+    justify-content: space-between;
+    min-width: 480px;
+    }
+    .main3 {
         width: 512px;
     }
     .map {
@@ -365,6 +387,17 @@ footer {
         width: 512px;
         height: 365px;
     }
+    .main4 {
+        width: 100%;
+    }
+    .example {
+        width: 204.8px;
+        height: 170px;
+    }
+    .hidden2 {
+        display: none;
+    }
+
     @keyframes photo {
         0%, 20% {
             margin-left: 0;
@@ -381,10 +414,9 @@ footer {
     }
 }
 @media screen and (max-width:512px) {
-    .main1,
-    .main4,
-    .interest {
-        width: 210px;
+    .main1 {
+        width: 320px;
+        justify-content: center;
     }
     .main3 {
         width: 256px;
@@ -395,10 +427,21 @@ footer {
         align-items: center;
         text-align-last: center;
     }
+    .main4 {
+        width: 100%;
+    }
+    .example {
+        width: 90%;
+        height: 170px;
+    }
     .map {
         overflow: hidden;
         width: 256px;
         height: 365px;
+    }
+    .hidden1,
+    .hidden2 {
+        display: none;
     }
     @keyframes photo {
         0%, 20% {
@@ -430,15 +473,25 @@ footer {
 }
 @media screen and (min-width:600px) and (max-width:1060px) {
     .main5 {
-        width: 600px;
+        width: 550px;
     }
 }
 @media screen and (max-width:600px) {
     .main5 {
-        width: 210px;
+        width: 280px;
     }
     .main2 {
-        width: 200px;
+        width: 320px;
+    }
+    .word5 {
+        width: 250px;
+    }
+    .center1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 90px;
     }
     .center {
         display: flex;
