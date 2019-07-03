@@ -269,6 +269,11 @@ footer {
     padding-top: 20px;
     font-size: 12px;
 }
+.qrcode {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 /*底部*/
 @media (max-width: 768px) {
 

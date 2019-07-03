@@ -236,6 +236,11 @@ footer {
     padding-top: 20px;
     font-size: 12px;
 }
+.qrcode {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 /*底部*/
 @media screen and (min-width:1300px) {
     main {
@@ -329,6 +334,9 @@ footer {
     .foot2 {
         width: 270px;
         justify-content: center;
+    }
+    .portrait {
+      margin: 30px 0;
     }
 }
 
