@@ -95,7 +95,6 @@ main {
 }
 table {
     table-layout: fixed;
-
     border-collapse: collapse;
     background: #fff;
     box-shadow: 1px 1px 1px #d0d6d9;
@@ -114,10 +113,7 @@ td {
     background: url(portrait.png) no-repeat;
 }
 .block {
-    overflow: hidden;
     margin: 0 auto;
-
-
 }
 .salary {
     text-align: center;
@@ -161,6 +157,10 @@ td {
 .word2 {
     color: #29b078;
 }
+.word2:hover {
+    background-color: #29b078;
+    color: #fff;
+}
 .word3 {
     color: #999;
 }
@@ -183,6 +183,10 @@ td {
 }
 .word7 {
     color: #333;
+}
+.word7:hover {
+    background-color: #29b078;
+    color: #fff;
 }
 /*主体*/
 footer {
