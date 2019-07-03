@@ -57,6 +57,7 @@ header {
     border-radius: 50%;
     background: none;
     border: 1px solid #fff;
+    cursor:pointer;
 }
 .carousel-control-next-icon {
     width: 2.7vw;
@@ -105,11 +106,10 @@ main {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
-    border-left: 1px dashed #dedede;
     width: 240px;
     height: 240px;
-    padding: 0 0 40px 50px;
 }
+
 .top4 {
     display: flex;
     align-items: baseline;
@@ -134,11 +134,11 @@ main {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-
+    box-shadow: 0 1px 1px 1px #e2e2e2;
     background-color: #fff;
 }
 .number:hover {
-    box-shadow: 2px 2px 2px 3px #999;
+    box-shadow: 2px 2px 2px 3px #e4e4e4;
 }
 .word5 {
     padding: 20px 0 20px 10px;
@@ -177,6 +177,7 @@ main {
     margin: 5px 18px;
     background-color: #fff;
     border: 1px solid #d7d7d7;
+    border-radius: 5px;
 }
 .wall:hover {
     box-shadow: 1px 1px 1px 3px #d7d7d7;
@@ -187,15 +188,17 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    border-radius: 5px;
 }
 .example {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+
 }
 .example:hover {
-    box-shadow: 0 0 2px 2px #d7d7d7;
+    box-shadow: 0 0 5px 1px #d7d7d7;
     z-index: 1;
 }
 /*主体合作企业部分*/
@@ -215,12 +218,12 @@ ul {
     padding-left: 0;
     margin: 0 auto;
 }
-li {
+.border-green {
     margin: 0 10px 10px 20px;
     color: #999;
-    border-bottom: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fafafa;
  }
- li:hover {
+ .border-green:hover {
      border-bottom: 1.5px solid #26a26f;
  }
 /*友情链接部分*/
@@ -327,6 +330,10 @@ footer {
         justify-content: space-between;
         max-width: 1024px;
     }
+    .top2 {
+        border-left: 1px dashed #dedede;
+        padding: 0 0 40px 50px;
+    }
     .main2,
     .main3,
     .main4,
@@ -347,6 +354,9 @@ footer {
     .center1 {
         display: flex;
         align-items: center;
+    }
+    .interest {
+        box-shadow: 0 0 0.5px 0.5px #e2e2e2;
     }
     .example {
         width: 204.8px;
@@ -379,6 +389,10 @@ footer {
     justify-content: space-between;
     min-width: 480px;
     }
+    .top2 {
+        border-left: 1px dashed #dedede;
+        padding: 0 0 40px 50px;
+    }
     .main3 {
         width: 512px;
     }
@@ -393,6 +407,7 @@ footer {
     .example {
         width: 204.8px;
         height: 170px;
+        box-shadow: 0 0 0.5px 0.5px #e2e2e2;
     }
     .hidden2 {
         display: none;
@@ -430,8 +445,12 @@ footer {
     .main4 {
         width: 100%;
     }
-    .example {
+    .interest {
         width: 90%;
+        box-shadow: 0 0 0.5px 0.5px #e2e2e2;
+    }
+    .example {
+        width: 100%;
         height: 170px;
     }
     .map {
@@ -482,6 +501,7 @@ footer {
     }
     .main2 {
         width: 320px;
+        padding: 0 10px;
     }
     .word5 {
         width: 250px;
