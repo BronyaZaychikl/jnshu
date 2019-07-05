@@ -13,13 +13,11 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 40px;
     margin: 0 auto;
 }
 .top2 {
     display: flex;
     align-items: center;
-    height: 100%;
 }
 p {
     margin: 0;
@@ -27,18 +25,18 @@ p {
 
 .top3 {
     padding: 9px 15px;
-    border: 1px solid #fff;
+    border-left: 1px solid #fff;
     color: #fff;
 }
 .top4 {
     padding: 9px 15px;
     border-right: 1px solid #fff;
-    border-left: -1px solid #fff;
+    border-left: 1px solid #fff;
     color: #fff;
 }
 .top3:hover,
 .top4:hover {
-    padding: 9px 30px;
+    padding: 9px 25px;
     background-color: #fff;
     color: #333; 
 }
@@ -87,6 +85,7 @@ main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin-right: -2px;
 }
 .pro {
     position: relative;
@@ -275,6 +274,10 @@ label input:checked + span:after {
     font-size: 24px;
     color: #fff;
 }
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
 /*下一步*/
 footer {
     width: 100%;
@@ -392,7 +395,7 @@ footer p {
 @media screen and (max-width:505px) {
     .top3,
     .top4 {
-        font-size: 14px;
+        font-size: 12px;
     }
     h5 {
         font-size: 16px;
@@ -459,7 +462,7 @@ footer p {
         margin: 0 auto;
     }
 }
-@media screen and (min-width:600px) and (max-width:679.98px) {
+@media screen and (min-width:600px) and (max-width:874.98px) {
     .main2 {
         justify-content: center;
     }
