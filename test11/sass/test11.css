@@ -46,7 +46,7 @@ header .right {
 }
 
 .main1 .left {
-  flex: 0 0 100px;
+  flex: 0 0 60px;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -58,7 +58,7 @@ header .right {
   align-items: center;
   height: 50px;
   margin-top: 5px;
-  padding-left: 20px;
+  padding-left: 10px;
   background-color: #fff;
 }
 
