@@ -80,6 +80,12 @@ header .right {
   color: #e1e5e7;
 }
 
+.main1 .right input::-webkit-outer-spin-button, .main1 .right input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .main2 {
   display: flex;
   justify-content: center;
