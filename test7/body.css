@@ -163,25 +163,29 @@ button {
 }
 
 .bg-dagger {
-    width: 4.6875vw; height: 4.6875vw;
+    width: 4.6875vw;
+    height: 4.6875vw;
     background-position:  -0 -0;
 }
 
 
 .bg-search {
-    width: 4.6875vw; height: 4.6875vw;
+    width: 4.6875vw; 
+    height: 4.6875vw;
     background-position:  -4.6875vw -0;
 }
 
 
 .bg-aim {
-    width: 4.6875vw; height: 4.6875vw;
+    width: 4.6875vw;
+     height: 4.6875vw;
     background-position:  -9.375vw -0;
 }
 
 
 .bg-cross {
-    width: 4.6875vw; height: 4.6875vw;
+    width: 4.6875vw; 
+    height: 4.6875vw;
     background-position:  -14.0625vw -0;
 }
 

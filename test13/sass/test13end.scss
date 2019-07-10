@@ -1,0 +1,133 @@
+@mixin fiexd {
+  position: fixed;
+  width: 100%;
+}
+html {
+  background-color: #fff;
+}
+body {
+  margin: 0 auto;
+  padding-top: 80px;
+  max-width: 720px;
+  background-color: #29bde0;
+}
+p {
+  margin: 0;
+}
+header {
+  @include fiexd;
+  max-width: 720px;
+  top: 0;
+  z-index: 1;
+  background-color: #29bde0;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    img {
+      margin: 0 20px;
+    }
+    p {
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 20px;
+  .victory {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 256px;
+    height: 150px;
+    background: url(img/victory.png);
+    strong {
+      padding-bottom: 15px;
+      font-size: 25px;
+      color: #fff;
+    }
+  }
+  .greet {
+    padding: 20px 0 50px;
+    font-size: 20px;
+    color: #ffc865;
+  }
+  .result {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #fff;
+    p {
+      padding: 2px 0;
+      padding-right: 20px;
+    }
+    .people {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+}
+main {
+  background-color: #fff;
+  padding-bottom: 75px;
+  .record {
+    width: 90%;
+    margin: 0 auto;
+    .word-color {
+      color: #a6a6a6;
+    }
+    .time {
+      display: flex;
+      justify-content: space-between;
+      .word-left {
+        font-size: 20px;
+      }
+      .word-right {
+        font-size: 14px;
+        color: #cecece;
+      }
+    }
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: rgba(#99dff0, 0.5);
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      height: 50px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(#000000, 0)
+    }
+    .foot-left {
+        background-color: #f66f6f;
+    }
+    .foot-right {
+        background-color: #fbb435;
+    }
+  }
+}

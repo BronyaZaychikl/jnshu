@@ -1,0 +1,156 @@
+@mixin bg {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+}
+body {
+  margin: 0 auto;
+  padding-top: 52px;
+  background-color: #f0f0f0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 44px;
+  background-color: #29bde0;
+  img {
+    padding: 15px;
+  }
+}
+input {
+  display: none;
+}
+nav {
+  position: fixed;
+  top: 44px;
+  left: -50vw;
+  width: 50vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      a {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #d0d0d0;
+        font-size: 18px;
+        color: #333;
+        img {
+          padding: 0 5px;
+        }
+        .nav-word {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+.content {
+  transition: all 0.5s ease-in-out;
+}
+#side-nav:checked ~ nav {
+  left: 0;
+}
+#side-nav:checked ~ .content {
+  transform: translateX(50vw);
+}
+/*侧边导航栏*/
+.menu {
+  @include bg;
+  height: 60.8px;
+  p {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #9a9a9a;
+  }
+  a {
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    top: 50%;
+    right: 10px;
+    margin-top: -10px;
+    background-image: url(img/back.png);
+    background-size: 12px 20px;
+  }
+}
+main {
+  @include bg;
+  margin-top: 10px;
+  .top {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: #fbb435;
+    border-bottom: 1px solid #fbb435;
+  }
+  .center {
+    width: 80%;
+    height: 75px;
+    margin: 20px auto;
+    background-color: #69d1e9;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .after {
+    text-align: center;
+  }
+  .last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    .circle {
+      width: 10px;
+      height: 10px;
+      margin: 0 2.5px;
+      border-radius: 50%;
+      &:link {
+        background-color: #d0d0d0;
+      }
+      &:visited {
+        background-color: #d0d0d0;
+      }
+      &:hover {
+        background-color: #69d1e9;
+      }
+    }
+  }
+  .pass {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 14px;
+    height: 28px;
+    margin-top: -7px;
+    margin-right: -10px;
+    background: url(img/next.png);
+    background-size: 14px 28px;
+  }
+}
