@@ -20,6 +20,7 @@ header {
   top: 0;
   z-index: 1;
   background-color: #29bde0;
+  border-bottom: 1px solid #74d4eb;
 }
 
 header div {
@@ -99,15 +100,19 @@ main .record {
 
 main .record .word-color {
   color: #a6a6a6;
+  padding: 3px 0;
 }
 
 main .record .time {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 40px;
 }
 
 main .record .time .word-left {
   font-size: 20px;
+  color: #515151;
 }
 
 main .record .time .word-right {
