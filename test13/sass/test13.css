@@ -170,7 +170,26 @@ main .last .circle:visited {
 }
 
 main .last .circle:hover {
+  background-color: #f115e6;
+}
+
+main .last .circle-else {
+  width: 10px;
+  height: 10px;
+  margin: 0 2.5px;
+  border-radius: 50%;
+}
+
+main .last .circle-else:link {
   background-color: #69d1e9;
+}
+
+main .last .circle-else:visited {
+  background-color: #69d1e9;
+}
+
+main .last .circle-else:hover {
+  background-color: #f115e6;
 }
 
 main .pass {

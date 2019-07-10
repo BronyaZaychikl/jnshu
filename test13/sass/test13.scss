@@ -138,8 +138,24 @@ main {
         background-color: #d0d0d0;
       }
       &:hover {
-        background-color: #69d1e9;
+        background-color: #f115e6;
       }
+    }
+    .circle-else {
+        width: 10px;
+        height: 10px;
+        margin: 0 2.5px;
+        border-radius: 50%;
+        &:link {
+          background-color: #69d1e9;
+        }
+        &:visited {
+          background-color: #69d1e9;
+        }
+        &:hover {
+          background-color: #f115e6;
+        }
+      
     }
   }
   .pass {
