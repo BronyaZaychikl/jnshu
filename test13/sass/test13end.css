@@ -92,7 +92,9 @@ main {
 
 main .record {
   width: 90%;
+  padding-bottom: 15px;
   margin: 0 auto;
+  border-bottom: 1px solid #ddd;
 }
 
 main .record .word-color {
