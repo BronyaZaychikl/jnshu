@@ -18,9 +18,9 @@ a {
   color: #fff;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-  .max-width {
-    overflow: hidden;
-  }
+.max-width {
+  overflow: hidden;
+}
 
 header {
   position: absolute;
@@ -41,7 +41,7 @@ nav {
   top: 44px;
   left: -50vw;
   width: 50vw;
-height: 621.8px-44px;
+  height: 621.8px-44px;
   z-index: 10;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
@@ -147,20 +147,19 @@ main {
       }
     }
     .circle-else {
-        width: 10px;
-        height: 10px;
-        margin: 0 2.5px;
-        border-radius: 50%;
-        &:link {
-          background-color: #69d1e9;
-        }
-        &:visited {
-          background-color: #69d1e9;
-        }
-        &:hover {
-          background-color: #f115e6;
-        }
-      
+      width: 10px;
+      height: 10px;
+      margin: 0 2.5px;
+      border-radius: 50%;
+      &:link {
+        background-color: #69d1e9;
+      }
+      &:visited {
+        background-color: #69d1e9;
+      }
+      &:hover {
+        background-color: #f115e6;
+      }
     }
   }
   .pass {
