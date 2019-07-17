@@ -1,0 +1,211 @@
+
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:16px/1.14 Tahoma, Helvetica, Arial,\5b8b\4f53;color:#333;outline:0;}
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(#000000, 0);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10%;
+  color: #29b078;
+  font-size: 12px;
+  .head {
+    padding-right: 20px;
+  }
+}
+nav {
+  display: flex;
+ position: relative;
+  padding: 0;
+  background-color: #29b078;
+  font-size: 16px;
+  color: #fff;
+  .navbar-case {
+    width: 100%;
+    input {
+      display: none;
+    }
+    .nav-line {
+      display: flex;
+      .nav-link {
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  nav {
+    flex-flow: row nowrap;
+     .jnshu {
+       position: absolute;
+       left: 10%;
+     }
+    .navbar-case {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 10%;
+      label {
+        display: none;
+      }
+    }
+    .nav-line {
+      .nav-link {
+        padding: 20px 20px 17px;
+        border-bottom: 3px solid #29b078;
+        &:hover {
+          border-bottom: 3px solid #fff;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  nav {
+    flex-flow: row nowrap;
+     .jnshu {
+       position: absolute;
+       left: 10%;
+       top: 14.5px;
+       width: 154px;
+       height: 29px;
+     }
+    .navbar-case {
+      position: relative;
+      width: 100%;
+      .nav-check {
+        display: flex;
+        width: 95%;
+        justify-content: flex-end;
+        padding: 10px 0;
+      }
+      input:checked ~ .nav-line {
+        height: 244px;
+      }
+      .nav-line {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        .nav-link {
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #26a26f;
+  color: #fff;
+  .foot-one {
+    display: flex;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #32c086;
+    span {
+      font-size: 14px;
+      padding-bottom: 3px;
+      border-bottom: 1.5px solid #26a26f;
+      &:hover {
+        border-bottom: 1.5px solid #fff;
+      }
+    }
+    .foot-contant {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      height: 100px;
+    }
+    .foot-branch {
+      display: flex;
+      flex-flow: column nowrap;
+      height: 100px;
+      justify-content: space-between;
+      padding: 10px;
+      span,
+      p {
+        margin: 0 10px;
+      }
+      .foot-branch-word {
+        display: flex;
+      }
+    }
+    .foot-wechat {
+          display: flex;
+          flex-flow: column nowrap;
+          p {
+            padding-bottom: 5px;
+          }
+    }
+  }
+  .foot-two {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (min-width:633px) {
+.foot-one {
+  width: 95%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  .foot-contant {
+    padding: 10px;
+  }
+  .foot-wechat {
+    align-items:center;
+    padding: 10px;
+}
+}
+}
+@media screen and (max-width:632.98px) {
+  .foot-one {
+
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    .foot-contant {
+      padding: 20px;
+    }
+    .foot-wechat {
+      align-items:flex-start;
+      padding-left: 20px;
+  }
+  }
+}

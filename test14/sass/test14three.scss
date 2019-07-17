@@ -1,0 +1,192 @@
+body {
+  background-color: #fafafa;
+}
+main {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: 0 auto;
+
+  p {
+    padding: 10px;
+  }
+  .first {
+    display: flex;
+    margin: 5px 0;
+    border-bottom: 1px solid #d0d6d9;
+    .fir-word {
+      margin-left: -10px;
+      &:hover {
+        background-color: #29b078;
+        color: #fff;
+      }
+    }
+  }
+  .direction {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 1px solid #edf1f2;
+    a {
+      padding: 10px;
+      color: #333;
+      &:hover {
+        background-color: #29b078;
+        color: #fff;
+      }
+    }
+  }
+  .details {
+    .title {
+      display: block;
+      color: #333;
+      font-weight: bold;
+      padding: 20px 0;
+      margin: 20px 10px;
+      border-bottom: 1px solid #d0d6d9;
+    }
+    .form {
+      display: flex;
+      flex-flow: row wrap;
+      .table {
+        position: relative;
+        overflow: hidden;
+        width: 380px;
+        word-break: break-all;
+        margin: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 1px .5px #e2e2e2;
+        &:hover .roll {
+          left: 0;
+        }
+        .roll {
+          position: absolute;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-items: center;
+          width: 380px;
+          height: 380px;
+          left: -380px;
+          transition: all 0.5s;
+          color: #fff;
+          background: rgba(#000000, 0.7);
+          p {
+            padding: 10px 50px;
+            font-size: 16px;
+          }
+        }
+        p {
+          padding: 5px;
+          font-size: 13px;
+        }
+        .tab {
+          display: flex;
+          border: 1px solid #edf1f2;
+          margin: -1px 0;
+          .people {
+            margin: 10px;
+          }
+          .tab-front {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            .strong {
+              font-weight: bold;
+            }
+          }
+          .tab-one {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            border-left: 1px solid #edf1f2;
+            margin-left: -1px;
+            color: #999;
+            span {
+              padding-left: 10px;
+              color: #f01400;
+              font-size: 12px;
+            }
+            .color {
+              color: #333;
+              padding-left: 0;
+            }
+            img {
+              padding: 0 3px;
+            }
+          }
+          .tab-two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            color: #999;
+          }
+          .tab-three {
+            flex: 1.5;
+            .tab-thr-one {
+              display: flex;
+              justify-content: space-between;
+              padding: 5px;
+              border: 1px solid #edf1f2;
+              margin: -1px;
+            }
+          }
+        }
+        .tab-four {
+          font-size: 14px;
+          border: 1px solid #edf1f2;
+          margin-bottom: -1px;
+          font-weight: bold;
+          span {
+            font-size: 14px;
+            color: #f01400;
+            font-weight: bold;
+          }
+        }
+        .tab-five {
+          border: 1px solid #edf1f2;
+          color: #999;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1334px) {
+  main {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1333.98px) {
+  main {
+    width: 80%;
+    .form {
+      justify-content: space-between;
+    }
+  }
+}
+@media screen and (max-width: 999.98px) and (min-width: 440px) {
+  main {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 439.98px) {
+  main {
+    width: 100% !important;
+    .table {
+      width: 100% !important;
+      .tab-one {
+        span {
+          padding-left: 0 !important;
+        }
+      }
+      &:hover .roll {
+        left: 0 !important;
+      }
+      .roll {
+        width: 100vw !important;
+        left: -100vw !important;
+      }
+    }
+  }
+}
