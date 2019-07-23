@@ -1,4 +1,4 @@
-   p{
+   p {
     float: left;
     padding: 15.6%;
     background: orange;
@@ -6,8 +6,16 @@
     border-radius: 10%
 
     }
-    div{
-      
+    .div{
        width: 100%;
-       padding-bottom: 100%;
+
+       overflow: hidden;
     }
+button {
+   width: 100%;
+   margin: 1vw 0;
+   font-size: 5vw;
+   background-color: #fff;
+   border: .1vw solid orange;
+   border-radius: 10px;
+}
