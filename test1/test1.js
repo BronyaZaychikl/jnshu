@@ -12,7 +12,6 @@ function aaa() {
         result.push(ass[ran]);
         ass[ran] = ass[ass.length - i - 1];
     }
-console.log(result);
     for (var i = 0; i < 9; i++) {//每次随机颜色时遍历将背景设置好
         document.getElementsByTagName('p')[i].style.backgroundColor = "orange";
     }
@@ -34,9 +33,6 @@ console.log(result);
             }
         }
     }
-    console.log(ax[0]);
-    console.log(ax[1]);
-    console.log(ax[2]);
     result[0].style.backgroundColor = ax[0];
     result[1].style.backgroundColor = ax[1];
     result[2].style.backgroundColor = ax[2];
@@ -46,8 +42,9 @@ var btn1 = document.getElementsByTagName("button")[0];
 var btn2 = document.getElementsByTagName("button")[1];
 var aq;//重复
 function abc() {
+    aaa();
+    window.clearInterval(aq);
     aq = window.setInterval("aaa()", 500);
-    btn1.disabled = true;
     btn1.style.backgroundColor = "orange";
     btn2.style.backgroundColor = "#fff";
     btn1.style.color = "#fff";
@@ -58,7 +55,7 @@ function abd() {//停止重复
     for (var i = 0; i < 9; i++) {//每次随机颜色时遍历将背景设置好
         document.getElementsByTagName('p')[i].style.backgroundColor = "orange";
     }
-    btn1.disabled = false;
+    
     btn2.style.backgroundColor = "orange";
     btn1.style.backgroundColor = "#fff";
     btn1.style.color = "orange";
