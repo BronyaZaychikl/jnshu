@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <link rel="icon" href="favicon.ico" type="x-icon">
+
+    <style>
+        .float {
+            float: left;
+        }
+    </style>
+
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : './css/reveal/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <img src="./葡萄藤PPT_files/logo.png" alt="" usemap="#pttmap" class="base-logo">
+    <map name="pttmap">
+        <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com/" alt="" target="_blank">
+    </map>
+    <div class="reveal default center" role="application" data-transition-speed="slow"
+        data-background-transition="fade">
+        <div class="slides"
+            style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.756);">
+            <section class="past" style="top: 158px; display: none;" hidden="" aria-hidden="true">
+                <h3>渐进增强和优雅降级之间有什么不同?</h3>
+                <p>分享人：李珅颖</p>
+            </section>
+            <section class="past" style="top: 3px; display: block;" hidden="" aria-hidden="true">
+                <p>目录</p>
+                <p>1.背景介绍</p>
+                <p>2.知识剖析</p>
+                <p>3.常见问题</p>
+                <p>4.解决方案</p>
+                <p>5.编码实战</p>
+                <p>6.扩展思考</p>
+                <p>7.参考文献</p>
+                <p>8.更多讨论</p>
+            </section>
+
+            <section class="past" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>1.背景介绍</h3>
+            </section>
+            <section class="past" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>
+                    渐进增强和优雅降级这两个概念是在CSS3出现之后火起来的。由于低级浏览器不支持CSS3，但是CSS3特效太优秀不忍放弃，所以在高级浏览器中使用CSS3，而在低级浏览器只保证最基本的功能。二者的目的都是关注不同浏览器下的不同体验，但是它们侧重点不同，所以导致了工作流程上的不同。
+                </p>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>2.知识剖析</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>渐进增强：一开始就针对低版本浏览器进行构建页面，完成基本的功能，然后再针对高级浏览器进行效果、交互、追加功能达到更好的体验。</p>
+                <p>优雅降级：一开始就构建站点的完整功能，然后针对浏览器测试和修复。比如一开始使用 CSS3 的特性构建了一个应用，然后逐步针对各大浏览器进行 hack 使其可以在低版本浏览器上正常浏览。</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>　区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。
+                </p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>3.常见问题</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>两种观念的区别是什么？</p>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>4.解决方案</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>优雅降级和渐进增强只是看待同种事物的两种观点。优雅降级和渐进增强都关注于同一网站在不同设备里不同浏览器下的表现程度。关键的区别则在于它们各自关注于何处，以及这种关注如何影响工作的流程。</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>优雅降级观点认为应该针对那些最高级、最完善的浏览器来设计网站。而将那些被认为“过时”或有功能缺失的浏览器下的测试工作安排在开发周期的最后阶段，并把测试对象限定为主流浏览器（如 IE、Mozilla
+                    等）的前一个版本。在这种设计范例下，旧版的浏览器被认为仅能提供“简陋却无妨 (poor, but passable)”
+                    的浏览体验。你可以做一些小的调整来适应某个特定的浏览器。但由于它们并非我们所关注的焦点，因此除了修复较大的错误之外，其它的差异将被直接忽略。</p>
+                <p>渐进增强观点则认为应关注于内容本身。请注意其中的差别：此处强调的是内容，而不是浏览器。内容是我们建立网站的诱因。有的网站展示它，有的则收集它，有的寻求，有的操作，还有的网站甚至会包含以上的种种，但相同点是它们全都涉及到内容。这使得渐进增强成为一种更为合理的设计范例。
+                </p>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>5.编码实战</h3>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>6.扩展思考</h3>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4>在网页布局中选择渐进增强还是优雅降级？</h4>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>如果软件开发的预算和时间充足，就不存在抉择的问题。然而现实很残酷，要么开发周期短，要么开发预算少，或者二者兼而有之，这个时候该如何抉择？</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>根据你的用户所使用的客户端的版本来做决定。我们所谓的客户端，可以指浏览器，移动终端设备（如：手机，平板电脑，智能手表等）以及它们对应的应用程序（浏览器对应的是网站，移动终端设备对应的是相应的APP）。
+                </p>
+                <p>现在有很成熟的技术，能够让你分析使用你客户端程序的版本比例。如果低版本用户居多，当然优先采用渐进增强的开发流程；如果高版本用户居多，为了提高大多数用户的使用体验，那当然优先采用优雅降级的开发流程。
+                </p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>然而事实情况是怎么样的呢？绝大多数的大公司都是采用渐进增强的方式，因为业务优先，提升用户体验永远不会排在最前面。例如：新浪微博网站前端的更新，拥有这种亿级用户的网站，绝对不可能追求某个特效而不考虑低版本用户可不可用，一定是确保低版本到高版本的可访问性，再去渐进增强，采用新功能给高版本用户提供更好的用户体验。但也不是没有反例。如果你开发的是一款面向青少年的软件（或网站），你知道这个群体的人总是喜欢尝试新事物，总是喜欢酷炫的特效，总是喜欢把它们的软件更新到最新版本（比如我自己，虽然青春已不再）。面对这种情况，渐进增强的开发流程实为上选。
+                </p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>7.参考文献</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>
+                    参考一：<a href="https://www.jianshu.com/p/d313f1108862" target="_blank">渐进增强 VS 优雅降级</a>
+                </p>
+                <p>
+                    参考二：<a href="https://blog.csdn.net/wxl1555/article/details/52736487" target="_blank">页面构建的方式
+                        渐进增强和优雅降级</a>
+                </p>
+                <p>
+                    参考三：<a
+                        href="https://www.zhangxinxu.com/wordpress/2010/09/%E9%9C%80%E8%AD%A6%E6%83%95css3%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B9%A6%E5%86%99%E9%A1%BA%E5%BA%8F/"
+                        target="_blank">需警惕CSS3属性的书写顺序--张鑫旭</a>
+                </p>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>8.更多讨论</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4></h4>
+                <p></p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4></h4>
+                <p></p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4>鸣谢</h4>
+                <p>感谢大家观看</p>
+                <small>by: 李珅颖</small>
+            </section>
+
+        </div>
+        <div class="backgrounds">
+            <div class="slide-background past" data-loaded="true" style="display: none;"></div>
+            <div class="slide-background past" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background past" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background stack present" data-loaded="true" style="display: block;">
+                <div class="slide-background past" data-loaded="true" style="display: block;"></div>
+                <div class="slide-background present" data-loaded="true" style="display: block;"></div>
+            </div>
+            <div class="slide-background future" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background future" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background future" data-loaded="true" style="display: none;"></div>
+            <div class="slide-background future" data-loaded="true" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+            </div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+            </div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+            </div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+                <div class="slide-background future" style="display: none;"></div>
+                <div class="slide-background future" style="display: none;"></div>
+            </div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+        </div>
+        <div class="progress" style="display: block;"><span style="width: 260.19px;"></span></div>
+        <aside class="controls" style="display: block;"><button class="navigate-left enabled"
+                aria-label="previous slide"></button><button class="navigate-right enabled"
+                aria-label="next slide"></button><button class="navigate-up enabled"
+                aria-label="above slide"></button><button class="navigate-down" aria-label="below slide"></button>
+        </aside>
+        <div class="slide-number" style="display: none;"></div>
+        <div class="speaker-notes" data-prevent-swipe=""></div>
+        <div class="pause-overlay"></div>
+        <div id="aria-status-div" aria-live="polite" aria-atomic="true"
+            style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+
+            语法：
+            return[()[expression][]];
+            可选项 expression 参数是要从函数返回的值。如果省略，则该函数不返回值。
+
+            用 return 语句来终止一个函数的执行，并返回 expression 的值。如果 expression 被省略，
+            或在函数内没有 return 语句被执行，则把值 undefined 赋给调用当前函数的表达式。
+        </div>
+    </div>
+
+    <script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+    <script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+
+    <script>
+
+        // 以下为常见配置属性的默认值
+        // {
+        //  controls: true, // 是否在右下角展示控制条
+        //  progress: true, // 是否显示演示的进度条
+        //  slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+        //  history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+        //  keyboard: true, // 是否启用键盘快捷键来导航
+        //  overview: true, // 是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+        //  center: true, // 是否将幻灯片垂直居中
+        //  touch: true, // 是否在触屏设备上启用触摸滑动切换
+        //  loop: false, // 是否循环演示
+        //  rtl: false, // 是否将演示的方向变成RTL，即从右往左
+        //  fragments: true, // 全局开启和关闭碎片。
+        //  autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+        //  transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+        //  transitionSpeed: 'default', // 过渡速度，default/fast/slow
+        //  mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+        // }
+
+        // 初始化幻灯片
+        Reveal.initialize({
+            //        history: true,
+            transition: 'default',
+            transitionSpeed: 'slow',
+            dependencies: [
+                { src: '../plugin/markdown/marked.js' },
+                { src: '../plugin/markdown/markdown.js' },
+                { src: '../plugin/notes/notes.js', async: true },
+                {
+                    src: '../plugin/highlight/highlight.js', async: true, callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+        //    原始类型对象直接赋值不会相互影响
+        //    var a = 1;
+        //
+        //    var b = a;
+        //    b = 10;
+        //    console.log(a); // 1
+        ////
+        //    var a = 'hello';
+        //    var b = a;
+        //    b = 'world';
+        //    console.log(a); // hello
+        //
+        //    var a = true;
+        //    var b = a;
+        //    b = false;
+        //    console.log(a);
+
+        //数组浅复制
+        //    var a = ['隔壁老王','冠希哥', '宋经理' //定义一个名为a的属猪，里面有3个值，
+        //    ];
+        //    var b = a;   //定义一个变量b，把a赋值给他，这样比、b和a一样了
+        //    b[2] = '冲冲老师'; //然后把b的第三个值等于冲冲老师
+        //    console.log(a)//那么现在打印a 是什么结果呢
+        //
+        //    var arr = ["One","Two","Three"];   //数组的深复制，slice方法
+        //    var arrtoo = arr.slice(1);
+        //    arrtoo[2] = "set Map";
+        //    console.log(arr);//One,Two,Three
+        //    console.log(arrtoo);//One,set Map,Three
+
+        //
+        //    var arr1 = ["One","Two","Three"]; //数组的深复制，concat 方法
+        //    var arrtooo = arr1.concat(111111);
+        //    arrtooo[1] = "set Map To";
+        //    console.log(arr1);//One,Two,Three
+        //    console.log(arrtooo);//One,set Map To,Three
+
+        //
+        //    var b=[1,2,3,4,5];   //concat的链接
+        //    var c=[6,7,8,9];
+        //    var d =[4,4,22]
+        //    console.log(b.concat(c,d))
+
+        var a = { name: 'yy', age: 26 };  //对象的浅拷贝哦
+        var b = new Object();
+        b.name = a.name;
+        b.age = a.age;
+        b.name = 'xx';
+        console.log(a);//Object { name="yy", age=26}
+        console.log(b);//Object { name="xx", age=26}
+
+        var d = {            //对象的浅拷贝哦 第一种
+            name: 'd',
+            oc: {
+                age: 32
+            },
+            oad: {
+                adds: {
+                    bb: 12
+                }
+            }
+        };
+        var deepCopy = function (source) {
+            var result = {};
+            for (var key in source) {
+                result[key] = typeof source[key] === 'object' ? deepCopy(source[key]) : source[key]
+            }
+            return result
+        };
+
+        var c = deepCopy(d);
+        c.name = 'c';
+        c.oc = {
+            age: 49
+        };
+        console.log(c);
+        console.log(d);
+
+
+        //    var person = {    //第二种深拷贝
+        //        name: 'aa',
+        //        friends: ['da', 'dsa', 'gf']
+        //    };
+        //
+        //    var aPerson = Object.create(person, {
+        ////        name: {
+        ////            value: "gee"
+        ////        }
+        //    });
+        //
+        //    console.log(person.name);
+        //    console.log(aPerson.friends)
+
+        var Chinese = {
+            nation: '中国'
+
+        }
+        var Doctor = {
+            career: '医生'
+        }
+
+        function extendCopy(p) {
+            var c = {};
+            for (var i in p) {
+                c[i] = p[i];
+            }
+            c.uber = p;
+            return c;
+        }
+
+        var Doctor = extendCopy(Chinese);
+        Doctor.career = '医生';
+        console.log(Doctor); // 中国
+        Chinese.birthPlaces = ['北京', '上海', '香港'];
+        var Doctor = extendCopy(Chinese);
+        Doctor.birthPlaces.push('厦门');
+
+    </script>
+
+</body>
+
+</html>
