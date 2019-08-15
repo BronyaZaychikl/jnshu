@@ -14,15 +14,25 @@ $(":button").click(function () {
     if (x < ne.name.length-1) {
         order = "角色：" + ne.name[x];
         $(".role").text(order);
+        var wordone="词组："+ne.oneword;
+            var wordtwo="词组："+ne.twoword;
+            if(ne.name[x]=="刺客") {
+                $(".word").text(wordone);
+            }
+            else if(ne.name[x]=="平民") {
+                $(".word").text(wordtwo);
+            }
         if (y <= 0) {
             y++;
         }
         else if (y > 0) {
             var one = "查看" + num + "号身份";
             var two = "隐藏并传递给" + (num + 1) + "号";
+            
             $("#num-word").text(num);
             $(".foot-one").val(one);
             $(".foot-two").val(two);
+            
             num++;
             y = 0;
             x++;
@@ -44,6 +54,7 @@ $(".head-back,.head-close").click(function () {
 });
 
 
+console.log(ne)
 
 
 

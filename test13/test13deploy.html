@@ -29,24 +29,28 @@
                 <input type="button" value="点击设置" onclick="setUp()">
             </div>
         </div>
-        <p class="number">玩家人数<input type="number" value="4" id="number" onchange="number()" onclick="text()">人<span>玩家数量为4-18人</span></p>
+        <div class="main-bg">
+            <div class="main-word">
+                <p>刺客词组：</p>
+                <input type="text" id="word-one" onchange="one()">
+            </div>
+            <div class="main-word">
+                <p>平民词组：</p>
+                <input type="text" id="word-two" onchange="one()">
+            </div>
+
+        </div>
+
+        <p class="number">玩家人数<input type="number" value="4" id="number" onchange="number()"
+                onclick="text()">人<span>玩家数量为4-18人</span></p>
         <div class="btn">
             <input type="button" class="btn-left" onclick="btnleft(),text()">
             <input type="range" id="range" value="4" max="18" min="4" step="1" oninput="range(),text()">
             <input type="button" class="btn-right" onclick="btnright(),text()">
         </div>
-<input type="button" class="card" value="去发牌" onclick="setUp(),next()">
+        <input type="button" class="card" value="去发牌" onclick="setUp(),next()">
     </main>
-
-
-
-
-
-
-
-
-
-
+    <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/test13deploy.js"></script>
 </body>
 

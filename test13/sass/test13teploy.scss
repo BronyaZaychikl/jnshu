@@ -48,7 +48,16 @@ main {
       border: none;
       outline: none;
     }
+  } 
+  .main-bg {
+    background-color: #fff;
+    padding: 20px;
+    .main-word {
+      display: flex;
+    padding: 10px;
+    }
   }
+ 
   .ratio {
     display: flex;
     background-color: #fff;
@@ -58,6 +67,7 @@ main {
       border: 1px solid #f0f0f0;
       text-align: center;
     }
+   
     .ratio-num {
       width: 100%;
       ul {

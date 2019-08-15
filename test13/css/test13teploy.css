@@ -56,6 +56,16 @@ main .content input[type="text"] {
   outline: none;
 }
 
+main .main-bg {
+  background-color: #fff;
+  padding: 20px;
+}
+
+main .main-bg .main-word {
+  display: flex;
+  padding: 10px;
+}
+
 main .ratio {
   display: flex;
   background-color: #fff;

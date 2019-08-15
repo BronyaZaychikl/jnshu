@@ -1,3 +1,4 @@
+$(function () { });
 var x = document.getElementById("range");
 var y = document.getElementById("number");
 function range() {
@@ -52,21 +53,31 @@ function text() {
         twoText.value = y.value - 4;
     }
 }
+var alldata = {
+    name: [],
+    life: [],
+    time: "未知",
+    num: 1,
+    text1: [],
+    text2: [],
+    daynum: 1,
+    vicotry: "",
+    word: "",
+    onenum: 1,
+    twonum: 1,
+    oneword: "",
+    twoword: ""
+}
+function one() {
+    var wordone = $("#word-one").val();
+    var wordtwo = $("#word-two").val();
+    alldata.oneword = wordone;
+    alldata.twoword = wordtwo;
+}
+
 function setUp() {
+
     var line = [];
-    var alldata ={
-        name:[],
-        life:[],
-        time:"未知",
-        num:1,
-        text1:[],
-        text2:[],
-        daynum:1,
-        vicotry:"",
-        word:"",
-        onenum:1,
-        twonum:1
-    }
     var num = {};
     line.length = x.value;
     alldata.name.length = x.value;
@@ -131,6 +142,7 @@ function setUp() {
             }
         }
     }
+
     var send = JSON.stringify(alldata);//转换为字符串
     sessionStorage.a = send;//存入
 }
