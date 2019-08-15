@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test13teploy.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <img src="css/img/back.png" class="img-left" onclick="history()">
+            <p>参数设置</p>
+            <img src="css/img/doubt.png" class="img-right" onclick="history()">
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <p>杀手<input type="text" value="1" id="one">人</p>
+            <p><input type="text" value="3" id="two">人</p>
+        </div>
+        <div class="ratio">
+            <p class="ratio-word">玩家配比</p>
+            <div class="ratio-num">
+                <ul id="people"></ul>
+                <input type="button" value="点击设置" onclick="setUp()">
+            </div>
+        </div>
+        <p class="number">玩家人数<input type="number" value="4" id="number" onchange="number()" onclick="text()">人<span>玩家数量为4-18人</span></p>
+        <div class="btn">
+            <input type="button" class="btn-left" onclick="btnleft(),text()">
+            <input type="range" id="range" value="4" max="18" min="4" step="1" oninput="range(),text()">
+            <input type="button" class="btn-right" onclick="btnright(),text()">
+        </div>
+<input type="button" class="card" value="去发牌" onclick="setUp(),next()">
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/test13deploy.js"></script>
+</body>
+
+</html>

@@ -55,7 +55,6 @@ function abd() {//停止重复
     for (var i = 0; i < 9; i++) {//每次随机颜色时遍历将背景设置好
         document.getElementsByTagName('p')[i].style.backgroundColor = "orange";
     }
-    
     btn2.style.backgroundColor = "orange";
     btn1.style.backgroundColor = "#fff";
     btn1.style.color = "orange";
