@@ -63,7 +63,9 @@ function setUp() {
         text2:[],
         daynum:1,
         vicotry:"",
-        word:""
+        word:"",
+        onenum:1,
+        twonum:1
     }
     var num = {};
     line.length = x.value;
@@ -131,7 +133,6 @@ function setUp() {
     }
     var send = JSON.stringify(alldata);//转换为字符串
     sessionStorage.a = send;//存入
-console.log(alldata);
 }
 function history() {
     window.location.href = "test13.html";

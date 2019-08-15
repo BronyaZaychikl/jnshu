@@ -6,6 +6,9 @@ console.log(vict);
 $(".victory").append(vict);
 var word = "<strong>" + ne.word + "</strong>";
 $(".greet").append(word);
+var num="<p>杀手"+ne.onenum+"人</p>"+
+"<p>平民"+ne.twonum+"人</p>";
+$(".people").append(num);
 for (let i = 0; i < ne.num-1; i++) {
     //     <div class="record">
     //     <div class="word">

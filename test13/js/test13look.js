@@ -1,8 +1,24 @@
 $(function () { });
 var get = window.sessionStorage.a;//读取
 var ne = JSON.parse(get);//重新转换为数组
-console.log(ne);
 var neNum = ne.name.length;
+var one=0;
+var two=0;
+for(let i=0;i<ne.name.length;i++) {
+    if (ne.name[i]=="刺客") {
+    one++;
+
+    }
+    else if (ne.name[i]=="平民") {
+        two++;
+
+    }
+
+}
+ne.onenum=one;
+ne.twonum=two;
+var send = JSON.stringify(ne);//转换为字符串
+sessionStorage.a = send;//存入
 for (let i = 0; i < neNum; i++) {
     $("main").append("<div class=box></div>");
 }
