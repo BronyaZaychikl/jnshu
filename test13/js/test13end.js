@@ -26,7 +26,7 @@ for (let i = 0; i < ne.num-1; i++) {
     $("main").append(rec1);
 }
 for (let i = 0; i < ne.num; i++) {
-    if(ne.time=="黑夜") {
+    if(ne.time=="黑夜"&&i==(ne.num-1)) {
         ne.text2[i+1]="抗战都结束啦，还在想啥呢";
    
     var rec1 = " <div class=record>" +
