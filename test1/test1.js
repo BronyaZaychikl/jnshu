@@ -1,9 +1,9 @@
 
 function aaa() {
     var arr = document.getElementsByTagName("p");//取三个随机格子
-    var ass=[];
-    for(var i=0;i<9;i++){
-      ass[i]=arr[i];
+    var ass = [];
+    for (var i = 0; i < 9; i++) {
+        ass[i] = arr[i];
     }
     var result = [];
     var ranNum = 3;
