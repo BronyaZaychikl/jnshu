@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <link rel="icon" href="favicon.ico" type="x-icon">
+
+    <style>
+        .float {
+            float: left;
+        }
+    </style>
+
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : './css/reveal/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <img src="./葡萄藤PPT_files/logo.png" alt="" usemap="#pttmap" class="base-logo">
+    <map name="pttmap">
+        <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com/" alt="" target="_blank">
+    </map>
+    <div class="reveal default center" role="application" data-transition-speed="slow"
+        data-background-transition="fade">
+        <div class="slides"
+            style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.756);">
+            <section class="past" style="top: 158px; display: none;" hidden="" aria-hidden="true">
+                <h3>简述原型链是什么，有什么用处？若想访问一个对象的原型，应该使用什么方法？</h3>
+                <p>分享人：李珅颖</p>
+            </section>
+            <section class="past" style="top: 3px; display: block;" hidden="" aria-hidden="true">
+                <p>目录</p>
+                <p>1.背景介绍</p>
+                <p>2.知识剖析</p>
+                <p>3.常见问题</p>
+                <p>4.解决方案</p>
+                <p>5.编码实战</p>
+                <p>6.扩展思考</p>
+                <p>7.参考文献</p>
+                <p>8.更多讨论</p>
+            </section>
+
+            <section class="past" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>1.背景介绍</h3>
+            </section>
+            <section class="past" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>
+登录之后，在其他页面怎么判断是否已经登录？，vue中通常情况是使用路由守卫和登录验证来进行判断。所谓的路由守卫可以简单的理解为一座房子的门口的保安，想要进入这个房子就必须通过保安的检查，要告诉路由守卫你从哪里来？总不能随便陌生人就给放进去？要到哪里去？然后保安再告诉你下一步该怎么做？如果你的确是这个房子主人允许进入的人，那就让你进入，否则就要打电话给房子主人，跟房主商量(登录注册)，给你权限。
+                </p>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>2.知识剖析</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>路由守卫：</p>
+                <p>导航守卫其实也是路由守卫，也可以是路由拦截，我们可以通过路由拦截，来判断用户是否登录，该页面用户是否有权限浏览，需要结合meta来实现</p>
+                <p>vue中路由守卫一共有三种，一个全局路由守卫，一个是组件内路由守卫，一个是router独享守卫</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>全局路由守卫：</p>
+                <p>所谓全局路由守卫，就是小区大门，整个小区就这一个大门，你想要进入其中任何一个房子，都需要经过这个大门的检查</p>
+           <p>全局路由守卫有个两个：一个是全局前置守卫，一个是全局后置守卫</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>组件路由守卫：</p>
+                <p>组件路由守卫是写在每个单独的vue文件里面的路由守卫</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>路由独享守卫：</p>
+                <p>路由独享守卫是在路由配置页面单独给路由配置的一个守卫</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>3.常见问题</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>上面所说三者具体过程是怎样的？</p>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>4.解决方案</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>(1)、全局路由守卫</p>
+                <p>全局前置守卫 router.beforeEach(fn)，fn中有三个参数（to,from,next）
+                </p>
+                <p>全局的解析守卫</p>
+                <p>在 2.5.0+ 你可以用 router.beforeResolve 注册一个全局守卫。这和 router.beforeEach 类似，区别是在导航被确认之前，同时在所有组件内守卫和异步路由组件被解析之后，解析守卫就被调用。</p>
+                <p>必须保证整个项目的守卫和异步路由组件解析完成</p>
+                <p>全局的后置守卫</p>
+                <p>router.afterEach( (to,from){条件代码}</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>(2)、路由独享守卫</p>
+                <p>写在路由表中的守卫钩子</p>
+                <p>对的是和当前路由相关的，那么其他与之不相关的路由，它是无法监听它的变化情况的</p>
+                <p>beforeEnter: (to,from,next){条件代码}</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>(3)、组件内守卫</p>
+                <p>组件内的前置守卫 beforeRouteEnter((to,from,next)=>{})</p>
+                <p>航进入组件时，调用，this是访问不到的，如果非要访问this ,必须通过 next(vm=>{})访问，因为组件此时没有创建，所以没有this。举例： 数据预载（进入组件前就获得数据）</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                    <p>组件内的后置守卫</p>
+                    <p>当离开组件时，调用，this是可以访问到javascript beforeRouteLeave (to,from,next){ 条件代码 }</p>
+                    <p>组件内的更新守卫（ 路由传参和路由的接参 ）beforeRouteUpdate ( to,from,next ){}，在当前路由改变，但是该组件被复用时调用，举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。可以访问组件实例 this</p>
+                    </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>5.编码实战</h3>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>6.扩展思考</h3>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4>登录的状态应该怎么设置？</h4>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>vue的项目的登录状态如果用vuex状态管理，页面一刷新vuex管理的状态就会消失，这样登录路由验证就没有意义了。可以将登录的状态写到web Storage中进行存储管理。</p>
+                <p>在登录组件里，将登录状态写入web Storage里。(一般写入session Storage，会话关闭，存储数据自动删除)</p>
+                <p>if('登录成功') 
+                         {sessionStorage.setItem('accessToken' , 写入登录成功返回的登录令牌或者自定义的判断字符串) }</p>
+                        <p>然后在需要登录验证的路由元信息里加入登录验证标识requiresAuth（自定义）</p>
+                        <p>最后在全局钩子函数beforeEach中验证页面是否需要登录</p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>7.参考文献</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <p>
+                    参考一：<a href="https://www.cnblogs.com/zjh-study/p/10647220.html" target="_blank">vue -- 路由守卫(导航守卫)</a>
+                </p>
+                <p>
+                    参考二：<a href="https://www.jb51.net/article/130487.htm"
+                        target="_blank">vue登录路由验证的实现</a>
+                </p>
+            </section>
+
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h3>8.更多讨论</h3>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4></h4>
+                <p></p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4></h4>
+                <p></p>
+            </section>
+            <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                <h4>鸣谢</h4>
+                <p>感谢大家观看</p>
+                <small>by: 李珅颖</small>
+            </section>
+
+        </div>
+        <div class="backgrounds">
+            <div class="slide-background past" data-loaded="true" style="display: none;"></div>
+            <div class="slide-background past" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background past" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background stack present" data-loaded="true" style="display: block;">
+                <div class="slide-background past" data-loaded="true" style="display: block;"></div>
+                <div class="slide-background present" data-loaded="true" style="display: block;"></div>
+            </div>
+            <div class="slide-background future" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background future" data-loaded="true" style="display: block;"></div>
+            <div class="slide-background future" data-loaded="true" style="display: none;"></div>
+            <div class="slide-background future" data-loaded="true" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+            </div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+            </div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+            </div>
+            <div class="slide-background stack future" style="display: none;">
+                <div class="slide-background present" style="display: none;"></div>
+                <div class="slide-background future" style="display: none;"></div>
+                <div class="slide-background future" style="display: none;"></div>
+            </div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+            <div class="slide-background future" style="display: none;"></div>
+        </div>
+        <div class="progress" style="display: block;"><span style="width: 260.19px;"></span></div>
+        <aside class="controls" style="display: block;"><button class="navigate-left enabled"
+                aria-label="previous slide"></button><button class="navigate-right enabled"
+                aria-label="next slide"></button><button class="navigate-up enabled"
+                aria-label="above slide"></button><button class="navigate-down" aria-label="below slide"></button>
+        </aside>
+        <div class="slide-number" style="display: none;"></div>
+        <div class="speaker-notes" data-prevent-swipe=""></div>
+        <div class="pause-overlay"></div>
+        <div id="aria-status-div" aria-live="polite" aria-atomic="true"
+            style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+
+            语法：
+            return[()[expression][]];
+            可选项 expression 参数是要从函数返回的值。如果省略，则该函数不返回值。
+
+            用 return 语句来终止一个函数的执行，并返回 expression 的值。如果 expression 被省略，
+            或在函数内没有 return 语句被执行，则把值 undefined 赋给调用当前函数的表达式。
+        </div>
+    </div>
+
+    <script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+    <script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+
+    <script>
+
+        // 以下为常见配置属性的默认值
+        // {
+        //  controls: true, // 是否在右下角展示控制条
+        //  progress: true, // 是否显示演示的进度条
+        //  slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+        //  history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+        //  keyboard: true, // 是否启用键盘快捷键来导航
+        //  overview: true, // 是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+        //  center: true, // 是否将幻灯片垂直居中
+        //  touch: true, // 是否在触屏设备上启用触摸滑动切换
+        //  loop: false, // 是否循环演示
+        //  rtl: false, // 是否将演示的方向变成RTL，即从右往左
+        //  fragments: true, // 全局开启和关闭碎片。
+        //  autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+        //  transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+        //  transitionSpeed: 'default', // 过渡速度，default/fast/slow
+        //  mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+        // }
+
+        // 初始化幻灯片
+        Reveal.initialize({
+            //        history: true,
+            transition: 'default',
+            transitionSpeed: 'slow',
+            dependencies: [
+                { src: '../plugin/markdown/marked.js' },
+                { src: '../plugin/markdown/markdown.js' },
+                { src: '../plugin/notes/notes.js', async: true },
+                {
+                    src: '../plugin/highlight/highlight.js', async: true, callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+        //    原始类型对象直接赋值不会相互影响
+        //    var a = 1;
+        //
+        //    var b = a;
+        //    b = 10;
+        //    console.log(a); // 1
+        ////
+        //    var a = 'hello';
+        //    var b = a;
+        //    b = 'world';
+        //    console.log(a); // hello
+        //
+        //    var a = true;
+        //    var b = a;
+        //    b = false;
+        //    console.log(a);
+
+        //数组浅复制
+        //    var a = ['隔壁老王','冠希哥', '宋经理' //定义一个名为a的属猪，里面有3个值，
+        //    ];
+        //    var b = a;   //定义一个变量b，把a赋值给他，这样比、b和a一样了
+        //    b[2] = '冲冲老师'; //然后把b的第三个值等于冲冲老师
+        //    console.log(a)//那么现在打印a 是什么结果呢
+        //
+        //    var arr = ["One","Two","Three"];   //数组的深复制，slice方法
+        //    var arrtoo = arr.slice(1);
+        //    arrtoo[2] = "set Map";
+        //    console.log(arr);//One,Two,Three
+        //    console.log(arrtoo);//One,set Map,Three
+
+        //
+        //    var arr1 = ["One","Two","Three"]; //数组的深复制，concat 方法
+        //    var arrtooo = arr1.concat(111111);
+        //    arrtooo[1] = "set Map To";
+        //    console.log(arr1);//One,Two,Three
+        //    console.log(arrtooo);//One,set Map To,Three
+
+        //
+        //    var b=[1,2,3,4,5];   //concat的链接
+        //    var c=[6,7,8,9];
+        //    var d =[4,4,22]
+        //    console.log(b.concat(c,d))
+
+        var a = { name: 'yy', age: 26 };  //对象的浅拷贝哦
+        var b = new Object();
+        b.name = a.name;
+        b.age = a.age;
+        b.name = 'xx';
+        console.log(a);//Object { name="yy", age=26}
+        console.log(b);//Object { name="xx", age=26}
+
+        var d = {            //对象的浅拷贝哦 第一种
+            name: 'd',
+            oc: {
+                age: 32
+            },
+            oad: {
+                adds: {
+                    bb: 12
+                }
+            }
+        };
+        var deepCopy = function (source) {
+            var result = {};
+            for (var key in source) {
+                result[key] = typeof source[key] === 'object' ? deepCopy(source[key]) : source[key]
+            }
+            return result
+        };
+
+        var c = deepCopy(d);
+        c.name = 'c';
+        c.oc = {
+            age: 49
+        };
+        console.log(c);
+        console.log(d);
+
+
+        //    var person = {    //第二种深拷贝
+        //        name: 'aa',
+        //        friends: ['da', 'dsa', 'gf']
+        //    };
+        //
+        //    var aPerson = Object.create(person, {
+        ////        name: {
+        ////            value: "gee"
+        ////        }
+        //    });
+        //
+        //    console.log(person.name);
+        //    console.log(aPerson.friends)
+
+        var Chinese = {
+            nation: '中国'
+
+        }
+        var Doctor = {
+            career: '医生'
+        }
+
+        function extendCopy(p) {
+            var c = {};
+            for (var i in p) {
+                c[i] = p[i];
+            }
+            c.uber = p;
+            return c;
+        }
+
+        var Doctor = extendCopy(Chinese);
+        Doctor.career = '医生';
+        console.log(Doctor); // 中国
+        Chinese.birthPlaces = ['北京', '上海', '香港'];
+        var Doctor = extendCopy(Chinese);
+        Doctor.birthPlaces.push('厦门');
+
+    </script>
+
+</body>
+
+</html>

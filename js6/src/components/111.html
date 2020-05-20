@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./vue.js"></script>
+  <!-- 1. 引入axios文件 -->
+  <script src="./axios.js"></script>
+  <style>
+    #app {
+      width: 600px;
+      margin: 10px auto;
+    }
+
+    .tb {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .tb th {
+      background-color: #0094ff;
+      color: white;
+    }
+
+    .tb td,
+    .tb th {
+      padding: 5px;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    .add {
+      padding: 5px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <form>
+  <fieldset>
+      <legend>分度读取文件：</legend>
+      <input type="file" id="File" />
+      <input type="button" value="中断" id="Abort" />
+      <p>
+          <label>读取进度：</label><progress id="Progress" value="0" max="100"></progress>
+      </p>
+      <p id="Status"></p>
+  </fieldset>
+</form> -->
+  <form name="uploadForm">
+    <p><input id="uploadInput" type="file" name="myFiles" onchange="updateSize();" multiple> selected files: <span
+        id="fileNum">0</span>; total size: <span id="fileSize">0</span></p>
+    <p><input type="submit" value="Send file"></p>
+  </form>
+
+</body>
+
+
+<script type="text/javascript">
+  function updateSize() {
+    let nBytes = 0,
+      oFiles = document.getElementById("uploadInput").files,
+      nFiles = oFiles.length;
+    for (let nFileId = 0; nFileId < nFiles; nFileId++) {
+      nBytes += oFiles[nFileId].size;
+    }
+    let sOutput = nBytes + " bytes";
+    // optional code for multiples approximation
+    for (let aMultiples = ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"],
+     nMultiple = 0, nApprox = nBytes / 1024; nApprox > 1; nApprox /= 1024, nMultiple++) {
+      sOutput = nApprox.toFixed(3) + " " + aMultiples[nMultiple];
+    }
+    // end of optional code
+    console.log(sOutput);
+    document.getElementById("fileNum").innerHTML = nFiles;
+    document.getElementById("fileSize").innerHTML = sOutput;
+  }
+</script>
+
+
+
+</html>

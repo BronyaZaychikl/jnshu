@@ -36,7 +36,8 @@ document.querySelector('#loading').onclick = function () {
             // 5.在注册的事件中 获取 返回的 内容 并修改页面的显示
             console.log('数据返回成功');
             // 数据是保存在 异步对象的 属性中
-            // console.log(ajax.responseText);
+            console.log(ajax.responseText);
         }
     }
 }
+

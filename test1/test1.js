@@ -60,3 +60,61 @@ function abd() {//停止重复
     btn1.style.color = "orange";
     btn2.style.color = "#fff";
 }
+//js检测数据类型
+// function a(obj){
+//     return typeof(obj)=="string";
+// }
+// alert(a(123));
+// alert(a("acbc"));
+
+//自定义原型链的方法进行平均值计算
+// Array.prototype.average = function () {
+//     var b = 0;
+//     var average=0;
+//     for (let i = 0; i < this.length; i++)
+//     b += this[i];
+//     average=b/this.length;
+//     return average;
+// }
+// var arr = [1, 2, 3, 4, 5];
+// var avg = arr.average();
+// console.log(avg);
+
+
+
+//   var url = "https://jobs.51job.com/shenzhen-baq/113561919.html?s=01&t=0"
+
+// function searchParams(url) {
+// var jsonList = {};
+// if (url.indexOf('?') != -1) {
+// const search = url.split('?')[1].split('&');
+// console.log(search)
+// for (var i = 0; i < search.length; i++) {
+// jsonList[search[i].split('=')[0]] = search[i].split('=')[1]
+// }
+// }
+// return jsonList;
+// // console.log(JSON.stringify(jsonList))
+// }
+// console.log(searchParams(url));
+
+// var prom = new Promise((resolve, reject) => {
+//     // 请在这里补充代码，使得2秒钟后，then()中的console.log出来'haidian'
+    
+//   })
+//   prom
+//     .then(data => {
+//       console.log(data.district)
+//     })
+//     .catch(err => {
+//       console.warn(err)
+//     })
+
+loadImage('http://www.taikang.com/images/index/tshapp.jpg')
+  .then(area => console.log(`图片的面积是${area}`))
+  .catch(url => console.warn(`无法加载位于${url}的图片`))
+
+function loadImage(url) {
+  // 补充这个函数
+
+}

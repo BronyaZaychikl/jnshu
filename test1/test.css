@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+#box{
+background-color: #f3071a;
+width: 100vw;
+height: 80vh;
+padding: 5px;
+box-shadow: .5px .5px 1px  #080001;
+}
